@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  
+
+<form method="post" action="/login">
+  <div class="form-group">
+    <label>Username</label>
+    <input class="form-control" type="text" name="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input class="form-control" type="password" name="password" placeholder="Password">
+  </div>
+   <a class="forgot-password" href="/forgot-password" >Forgot Password?</a>
+   <br>
+   <br>
+  <button class="btn" type="submit">Login</button>
+ 
+  <br>
+  <br>
+  Don't Have An Account? <a class="btn btn-warning btn-sm" href="/register">Register</a>
+</form>
+</body>
+</html>

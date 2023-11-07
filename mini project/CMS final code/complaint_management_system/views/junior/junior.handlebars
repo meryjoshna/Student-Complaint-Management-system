@@ -1,0 +1,33 @@
+<!-- junior.handlebars -->
+{{#if success_msg}}
+  <div class="alert alert-success" role="alert">
+    {{success_msg}}
+  </div>
+{{/if}}
+
+
+<table class="table table-bordered">
+  <thead class="table">
+    <tr>
+      <th scope="col">Complaint ID</th>
+      <th scope="col">Mess Coordinator Name</th>
+     
+    
+    </tr>
+  </thead>
+  
+<tbody>
+    {{#each complaints}}
+        <tr>
+            <td>{{complaintID}}</td>          
+            <td>{{messcoordinatorName}}</td>
+           
+          
+        </tr>
+    {{/each}}
+    
+  </tbody>
+</table>
+
+
+
